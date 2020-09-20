@@ -1,3 +1,5 @@
+import "../assets/styles/style.css";
+
 document.addEventListener("DOMContentLoaded", () => {
     const allBox = document.querySelectorAll('.board div');
     const scoreDisplay = document.querySelector('#score');
@@ -14,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let intervalTime = 0;
 
 
-    function startGame() {
+    const startGame = () => {
         //fungsi restart game
         currentSnake.forEach((index) => allBox[index].classList.remove('snake'));
         allBox[appleIndex].classList.remove('apple');
@@ -75,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const control = (code) => {
+        console.log(code)
         if (code.keyCode === 39) { //kanan
             xDirection = 1;
         } else if (code.keyCode === 40) { //bawah

@@ -1,10 +1,8 @@
-@font-face {
-    font-family: QuickSand;
-    src: url('../font/Quicksand-VariableFont_wght.ttf');
-}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
 
 * {
-    font-family: QuickSand, Verdana, sans-serif;
+    font-family: 'Kumbh Sans', Verdana, sans-serif;
 
 }
 
