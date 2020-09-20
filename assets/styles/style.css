@@ -1,0 +1,119 @@
+@font-face {
+    font-family: QuickSand;
+    src: url('../font/Quicksand-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: QuickSand, Verdana, sans-serif;
+
+}
+
+body {
+    background: linear-gradient(90deg, rgb(115, 170, 36), rgb(186, 216, 80));
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(186, 216, 80);
+    text-shadow: 0px 0px 10px rgb(115, 170, 36);
+    text-shadow: 0px 0px 10px black;
+    animation-name: title;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes title {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+}
+
+.board {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background: white;
+    border: 5px solid rgb(186, 216, 80);
+    box-shadow: 0px 0px 10px 10px rgb(115, 170, 36);
+    box-sizing: content-box;
+}
+
+.board div {
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background-color: rgb(115, 170, 36);
+}
+
+.apple {
+    border-radius: 50%;
+    background-color: red;
+    /* box-shadow: 0px 0px 10px 3px white; */
+    animation-name: apples;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes apples {
+    0% {
+
+        box-shadow: 0px 0px 10px 3px rgb(186, 216, 80);
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px 9px rgb(186, 216, 80);
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px 3px rgb(186, 216, 80);
+    }
+}
+
+.btn {
+    border-radius: 10px;
+    border: 2px solid rgb(115, 170, 36);
+    background: rgb(186, 216, 80);
+    color: black;
+    font-size: 1.3em;
+    box-shadow: 0px 0px 10px 1px white;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-right: auto;
+    padding: 10px;
+    display: block;
+}
+
+.btn:active {
+    font-size: 1.5em;
+    border: 0px solid white;
+}
+
+footer p {
+    color: white;
+    font-weight: ;
+    text-align: center;
+    text-shadow: 0px 0px 20px black;
+}

@@ -1,0 +1,19 @@
+{
+  "name": "snakegame",
+  "version": "1.0.0",
+  "description": "Simple snake game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gefyaqiilah/Game-SnakeGame.git"
+  },
+  "author": "gefyaqiilahaqshal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gefyaqiilah/Game-SnakeGame/issues"
+  },
+  "homepage": "https://github.com/Gefyaqiilah/Game-SnakeGame#readme"
+}
